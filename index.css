@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  color: white;
+}
+
+.canvas {
+  background-color: #252525;
+  width: 950px;
+  height: 600px;
+}
+
+
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-title {
+  margin-top: 10px;
+}
