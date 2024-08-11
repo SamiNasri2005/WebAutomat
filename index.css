@@ -5,22 +5,142 @@
 
 .canvas {
   background-color: #252525;
-  width: 950px;
-  height: 600px;
+  width: 1040px;
+  height: 660px;
 }
 
-
+.form-title {
+  margin-right: 5%;
+}
 
 .form-wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.radio {
+.input-wrapper {
+  border: 2px white solid ;
   display: flex;
+  padding: 1%;
+  margin: 1%;
+}
+
+.radio , .checker , .slider-labels{
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+.slider {
+  width: 90%;
+}
+
+.myslider {
+  width: 40%;
+  margin-left: 30%;
+}
+
+.text {
+  width: 90%;
+  height: 50%;
+  color: black;
+}
+
+.submit {
+  color: black;
+}
+
+
+
+/* ------------------------------ Storage ------------------------------ */
+
+.storage-title {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.datacores-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.datacores {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  padding: 20% 10%;
   justify-content: space-evenly;
 }
 
-.form-title {
-  margin-top: 10px;
+.storage-container {
+  border: 2px white solid ;
+  width: 10vw;
+  height: 10vh;
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  background-color: #252525;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ Info -------------------------------- */
+
+.info-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding: 2.5%;
+}
+
+.infolist {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.infoLabel {
+  color: white;
+  font-size: 2rem;
+}
+
+.infoText {
+  color: white;
+  font-size: 2rem;
+}
+
+.info-container{
+  display: flex;
+  border: 2px white solid ;
+  width: 100%;
+  height: 10%;
+}
+
+.infoButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2.5%;
+}
+
+#bearbeiten {
+  height: 20%;
+  background-color: #252525;
+}
+
+#loeschen {
+  height: 20%;
+  background-color: red;
 }

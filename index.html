@@ -6,85 +6,214 @@
   <body>
 
     <div id="canvas" class="canvas">
-        <h1>Create Roboter</h1>
-        <form id="myForm">
-            <div class="form-wrapper">
-                
-              <label for="nameID" class="form-title">Name:</label>
-              <input type="text" id="nameID" name="name">
 
-              <label for="colorID" class="form-title">Color:</label>
-              <input type="text" id="colorID" name="color">
-              
-              
-              <label class="form-title">Form:</label>
-              <div class="radio">
-                <div class="label-container">
-                  <label for="ballID">Ball</label>
-                  <input type="radio" id="ballID" name="form" value="ball" checked="checked">
+
+
+
+            <div class="datacores-wrapper" id="storage">
+              <div class="storage-title">
+                <h1>storage</h1>
+              </div>
+              <div class="datacores">
+                <div class="storage-container">
+                  <button class="button" id="storage1"></button>
                 </div>
-                <div class="label-container">
-                  <label for="cubeID">Cube</label>
-                  <input type="radio" id="cubeID" name="form" value="cube">
+                <div class="storage-container">
+                  <button class="button" id="storage2"></button>
                 </div>
-                <div class="label-container">
-                  <label for="frustumID">Frustum</label>
-                  <input type="radio" id="frustumID" name="form" value="frustum">
+                <div class="storage-container">
+                  <button class="button" id="storage3"></button>
+                </div>
+              </div>  
+            </div>
+
+
+
+
+            <div class="info-wrapper" id="info">
+
+              <div class="infolist">
+                <div class="info-container">
+                  <label class="infoText">Name:</label>
+                  <label class="infoLabel" id="name-info"></label>
+                </div>
+                <div class="info-container">
+                  <label class="infoText">Color:</label>
+                  <label class="infoLabel" id="color-info"></label>
+                </div>
+                <div class="info-container">
+                  <label class="infoText">Form:</label>
+                  <label class="infoLabel" id="form-info"></label>
+                </div>
+                <div class="info-container">
+                  <label class="infoText">Wheels:</label>
+                  <label class="infoLabel" id="wheels-info"></label>
+                </div>
+                <div class="info-container">
+                  <label class="infoText">Pattern:</label>
+                  <label class="infoLabel" id="pattern-info"></label>
+                </div>
+                <div class="info-container">
+                  <label class="infoText">Face:</label>
+                  <label class="infoLabel" id="face-info"></label>
+                </div>
+                <div class="info-container">
+                  <label class="infoText">Antenne:</label>
+                  <label class="infoLabel" id="antenne-info"></label>
+                </div>
+                <div class="info-container">
+                  <label class="infoText">Sword and Shield:</label>
+                  <label class="infoLabel" id="swordshield-info"></label>
+                </div>
+                <div class="info-container">
+                  <label class="infoText">Size:</label>
+                  <label class="infoLabel" id="size-info"></label>
                 </div>
               </div>
 
-              <label>Wheels:</label>
-              <div class="radio">
-                <div class="label-container">
-                  <label for="chainID">Chainwheels</label>
-                  <input type="radio" id="chainID" name="wheels" value="chain" checked="checked">
-                </div>
-                <div class="label-container">
-                  <label for="wheelsID">Round wheels</label> 
-                  <input type="radio" id="wheelsID" name="wheels" value="wheels">
-                </div>
-                <div class="label-container" style="visibility: hidden;">
-                  <label for="blankID">blank.......</label> 
-                  <input type="radio" id="blankID" name="wheels" value="blank">
-                </div>
+              <div class="infoButtons">
+                <button id="bearbeiten">Bearbeiten</button>
+                <button id="loeschen">Loeschen</button>
               </div>
-              
-              <label>Pattern:</label>
-              <div class="radio">
-                <div class="label-container">
-                  <label for="stripedID">Striped</label>
-                  <input type="radio" id="stripedID" name="pattern" checked="checked">
-                </div>
-                <div class="label-container">
-                  <label for="checkeredID">Checkered</label>
-                  <input type="radio" id="checkeredID" name="pattern">
-                </div>
-                <div class="label-container">
-                  <label for="spotedID">Spotted</label>
-                  <input type="radio" id="spotedID" name="pattern">
-                </div>
-              </div>
-
-              <label>Face:</label>
-              <div class="radio">
-                <div class="label-container">
-                  <label for="happyID">Happy</label>
-                  <input type="radio" id="stripedID" name="face" checked="checked">
-                </div>
-                <div class="label-container">
-                  <label for="angryID">Angry</label>
-                  <input type="radio" id="angryID" name="face">
-                </div>
-                <div class="label-container">
-                  <label for="cuteID">Cute</label>
-                  <input type="radio" id="cuteID" name="face">
-                </div>
-              </div>
-
-              <button type="submit">Submit</button>
 
             </div>
-        </form>
+
+
+
+      
+            <div class="form-wrapper" id="create">
+               
+              <h1>Create Roboter</h1>
+
+              <div class="input-wrapper">
+                <label for="nameID" class="form-title">Name:</label>
+                <input type="text" id="nameID" name="name" class="text">
+              </div>
+
+              
+              <div class="input-wrapper">
+                <label for="colorID" class="form-title">Color:</label>
+                <input type="text" id="colorID" name="color" class="text">
+              </div>
+              
+              
+              <div class="input-wrapper">
+                <label class="form-title">Form:</label>
+                <div class="radio">
+                  <div class="label-container">
+                    <label for="ballID">Ball</label>
+                    <input type="radio" id="ballID" name="form" value="ball" checked="checked">
+                  </div>
+                  <div class="label-container">
+                    <label for="cubeID">Cube</label>
+                    <input type="radio" id="cubeID" name="form" value="cube">
+                  </div>
+                  <div class="label-container">
+                    <label for="frustumID">Frustum</label>
+                    <input type="radio" id="frustumID" name="form" value="frustum">
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="input-wrapper">
+                <label>Wheels:</label>
+                <div class="radio">
+                  <div class="label-container">
+                    <label for="chainID">Chainwheels</label>
+                    <input type="radio" id="chainID" name="wheels" value="chain" checked="checked">
+                  </div>
+                  <div class="label-container">
+                    <label for="wheelsID">Round wheels</label> 
+                    <input type="radio" id="wheelsID" name="wheels" value="wheels">
+                  </div>
+                  <div class="label-container" style="visibility: hidden;">
+                    <label for="blankID">blank.......</label> 
+                    <input type="radio" id="blankID" name="wheels" value="blank">
+                  </div>
+                </div>
+              </div>
+             
+              <div class="input-wrapper">
+                <label>Pattern:</label>
+                <div class="radio">
+                  <div class="label-container">
+                    <label for="stripedID">Striped</label>
+                    <input type="radio" id="stripedID" name="pattern" value="striped" checked="checked">
+                  </div>
+                  <div class="label-container">
+                    <label for="checkeredID">Checkered</label>
+                    <input type="radio" id="checkeredID" name="pattern" value="checkered">
+                  </div>
+                  <div class="label-container">
+                    <label for="spotedID">Spotted</label>
+                    <input type="radio" id="spotedID" name="pattern" value="spotted">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="input-wrapper">
+                <label>Face:</label>
+                <div class="radio">
+                  <div class="label-container">
+                    <label for="happyID">Happy</label>
+                    <input type="radio" id="stripedID" name="face" value="happy" checked="checked">
+                  </div>
+                  <div class="label-container">
+                    <label for="angryID">Angry</label>
+                    <input type="radio" id="angryID" name="face" value="angry">
+                  </div>
+                  <div class="label-container">
+                    <label for="cuteID">Cute</label>
+                    <input type="radio" id="cuteID" name="face" value="cute">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="input-wrapper">
+              <label>Antenne:</label>
+              <div class="radio">
+                <div class="label-container">
+                  <label for="antennaYID>">Yes</label>
+                  <input type="radio" id="antennaYID" name="antenna" value="Yes" checked="checked">
+                </div>
+                <div class="label-container">
+                  <label for="antennaNID">No</label>
+                  <input type="radio" id="antennaNID" name="antenna" value="No">
+                </div>
+              </div>
+              </div>
+              
+              <div class="input-wrapper">
+              <label>Sword and Shield:</label>
+              <div class="checker">
+                <div class="label-container">
+                  <label for="swordID">Sword</label>
+                  <input type="checkbox" id="swordID" name="swordshield" value="sword">
+                </div>
+                <div class="label-container">
+                  <label for="shieldID">Shield</label>
+                  <input type="checkbox" id="shieldID" name="swordshield" value="shield">
+                </div>
+              </div>   
+              </div>
+              
+              <div class="input-wrapper">
+              <label>Size:</label>
+              <div class="slider">
+                <div class="slider-labels">
+                  <span>small</span> 
+                  <span>big</span> 
+                </div>
+                <div class="slider-container">
+                  <input type="range" class="myslider" min="1" max="100" step="1" value="50" name="slider" id="sliderID">
+                </div>
+              </div>
+              </div>
+                
+              <button class="button" id="submit">Submit</button>
+
+            </div>
     </div>
 
   </body>
